@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Operasi Perbandingan</title>
+</head>
+<body>
+   <!-- Operator Perbandingan -->
+    <ul>
+      <li>Operator perbanfingan a/ operasi untuk membandingkan 2 atau lebih data</li>
+      <li>Operator perndingan a/ operasi yang menghasilkan nilai boolean</li>
+      <li>Hasil operasi benar, nilainya true</li>
+      <li>Hasil operasi salah, nilainya false</li>
+    </ul>
+
+    <!-- Operator Perbandingan -->
+     <ul>
+      <li> > : Lebih Dari</li>
+      <li> < : Kurang Dari</li>
+      <li> => : Lebih dari sama dengan</li>
+      <li> <= : kurang dari sama dengan</li>
+      <li> == : sama dengan</li>
+      <li> === : sama dengan dan sama tipe</li>
+      <li> != : tidak sama dengan</li>
+      <li> !== : tidak sama dengan dan tidak sama tipe</li>
+     </ul>
+   <script>
+      // Operator Perbandingan
+
+      // == (sama dengan)
+      let result = 5 == "5"
+      document.writeln("<p>" + result + "</p>") //true (tidak membandingkan tipe datanya)
+      document.writeln("<br>")
+      
+      // === (sama dengan dan sama type)
+      result = 5 === "5" //membandingkan type datanya juga
+      document.writeln("<p>" + result + "</p>") // false (tidak memiliki type data yang sama)
+      
+      // < (kurang dari)
+      result = 5 < 10
+      document.writeln("<p>" + result + "</p>") // true (5 kurang dari 10)
+      
+      // > (lebih dari)
+      result = 5 > 10
+      document.writeln("<p>" + result + "</p>") // false (5 lebih dari 10)
+      
+      // > (lebih dari sama dengan)
+      result = 5 >= "5"
+      document.writeln("<p>" + result + "</p>") // true (5 lebih dari sama dengan "5")
+      console.info(result)
+      
+      // > (kurang dari sama dengan)
+      result = 5 <= 2
+      document.writeln("<p>" + result + "</p>") // false (5 kurang dari sama dengan 2)
+      console.info(result)
+
+   </script>
+</body>
+</html>

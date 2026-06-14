@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Operator Matematika</title>
+</head>
+<body>
+   <!-- Operasi Matematika -->
+    <ul>
+      <li> tanda + : untuk operasi penambahan</li>
+      <li> tanda - : untuk operasi pengurangan</li>
+      <li> tanda * : untuk operasi perkalian</li>
+      <li> tanda ** : untuk operasi perpangkatan (exponensial)</li>
+      <li> tanda / : untuk operasi pembagian</li>
+      <li> tanda % : untuk operasi modulus (sisa bagi)</li>
+    </ul>
+
+    <!-- Augmented assignment -->
+     <p>untuk melakukan operasi matematika dengan varible dirinya sendiri</p>
+     <p>misalnya : let angka = 10</p>
+     <p>angka + 2 = 12</p>
+     <p>bisa dilakukan dengan cara angka += 2 maka hasilnya sama.</p>
+
+    <!-- Operator Unary -->
+     <ul>
+      <li>Operator unary + : untuk menandakan nilai positif (default)</li>
+      <li>Operator unary - : untuk menandakan nilai negatif</li>
+      <li>Operator unary ++ : untuk menaikan nilai 1 angka</li>
+      <li>Operator unary -- : untuk menurunkan nilai 1 angka</li>
+     </ul>
+
+    <script>
+
+      // contoh penggunaan operator aritmatika
+      let angkaUtama = 10
+      let result;
+
+      // penjumlahan
+      result = angkaUtama + 2
+      document.writeln("Hasil penjumlahannya : " + result)
+      document.writeln("<br>")
+      console.info(result) // hasil nya 12
+
+      // pengurangan
+      result -= 3
+      document.writeln("Hasil pengurangannya : " + result)
+      document.writeln("<br>")
+      console.info(result) // hasil nya 9
+
+      // perkalian
+      result *= 2
+      document.writeln("Hasil perkaliannya : " + result)
+      document.writeln("<br>")
+      console.info(result) // hasil nya 18
+
+      // pembagian
+      result /= 3
+      document.writeln("Hasil pembagiannya : " + result)
+      document.writeln("<br>")
+      console.info(result) // hasil nya 6
+
+      // eksponensial
+      result **= 2
+      document.writeln("Hasil pemangkatan : " + result)
+      document.writeln("<br>")
+      console.info(result) // hasil nya 36
+
+      // modulus (sisa bagi)
+      result %= 5
+      document.writeln("Hasil sisa bagi : " + result)
+      document.writeln("<br>")
+      console.info(result) // hasil nya 1
+
+
+      // contoh operator unary
+      document.writeln("Hasil increment : " + angkaUtama++) // naik angka bernilai 1
+      document.writeln("<br>")
+      document.writeln("Hasil decrement : " + angkaUtama--) // turunin angka bernilai 1
+
+    </script>
+</body>
+</html>

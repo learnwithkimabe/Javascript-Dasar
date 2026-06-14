@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>String Template</title>
+</head>
+<body>
+   <!-- String Template -->
+    <ul>
+      <li>String template bisa mempermudah menggabungkan sebuah string yg dibuat dalam variable dengan memanggil nama variable tanpa harus menggunakan operator aritmatika lagi seperti cara sebelumnya.</li>
+      <li>Untuk menggunakan string template yaitu dengan menggunakan backtick (`) bukan tanda kutip ' atau "</li>
+      <li>Lebih fleksibel untuk enter, tab langsung (multiline string) dan bisa mengurangi penggunaan escape sequence. Namun penulisan pada script code sangat berpengaruh.</li>
+      <li>untuk memanggil nama variable maka tambahkan ${nama_variable}</li>
+      <li>Bisa di kombinasikan dengan expression string (perbandingan)</li>
+    </ul>
+    <script>
+
+      const firstName = "Kiki"
+      const lastName = "Afrianto"
+      let sayHello;
+      // kita gabungkan menjadi fulname dengan string template pada variable sayHello
+      sayHello = `Halo aku robot, 
+      salam kenal ya ${firstName} ${lastName}`
+      console.info(sayHello)
+
+      // contoh kombinasi expression string
+      const name = "Kiki Afrianto"
+      const nilai = 90
+
+      const template = `Nama : ${name}, dinyatakan Lulus : ${nilai > 80}`
+      console.info(template)
+
+    </script>
+</body>
+</html>

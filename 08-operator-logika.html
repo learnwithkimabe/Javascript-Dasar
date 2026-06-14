@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Operator Logika</title>
+</head>
+<body>
+   <p>Operator logika a/ operator untuk 2 buah data boolean</p>
+   <p>Hasil dari operator logika adalah boolean lagi.</p>
+
+   <!-- operator logika -->
+   <ul>
+      <li> && : Dan (akan mengasilkan nilai true jika 2 nilai yg dibandingkan bernilai true) kalau salah satunya atau keduanya false hasilnya false</li>
+      <li> || : Atau (akan menghasilkan nilai true, meskipun nilai yang dibandingkan salah satunya atau keduanya bernilai true), hanya akan false jika kedua data yg dibandingkan bernilai false.</li>
+      <li> ! : Kebalikan (Hanya digunakan untuk 1 data untuk mengubah nilai yg tadinya true jadi false atau sebaliknya)</li>
+   </ul>
+
+   <script>
+
+      // Contoh Operator Logika
+      const minimumExam = 75 // nilai minimum ujian
+      const minimumAbsent = 75 // nilai minimum absensi
+
+      // Nilai Siswa Bernama Gendis
+      let totalExam = 75
+      let totalAbsent = 60
+
+      // Perbandingan
+      // nilai gendis
+      const resultExam = totalExam >= minimumExam // perbandingan agar bisa lulus dari nilai
+      console.info(`Hasil Nilai : ${resultExam}`) //true
+   
+      // absen gendis
+      const resultAbsent = totalAbsent >= minimumAbsent // perbandingan agar bisa lulus dari absen
+      console.info(`Hasil Absen : ${resultAbsent}`) // false
+      
+
+      const isPass = resultExam && resultAbsent
+      console.info(isPass) //false
+      document.writeln(`Hasilnya : ${isPass}`) //false (tidak lulus)
+
+   </script>
+</body>
+</html>

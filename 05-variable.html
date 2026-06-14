@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Variable</title>
+</head>
+<body>
+   <!-- Variable -->
+    <ul>
+      <li>Variable a/ tempat untuk menyimpan data</li>
+      <li>Dengan kita menyimpan data di variable, kita bisa menggunakan data dengan hanya memanggil nama variablenya</li>
+      <li>Membuat var bisa dengan kata kunci var, let, const</li>
+      <li>JS a/ dynamic languange, memungkinkan kita untuk mengubah type data (tidak terpaku dengan 1 type data) pada 1 variable</li>
+      <li>Variable bisa digunakan berkali kali diakses</li>
+      <li>Mempermudah untuk memanggil data sama berulang ulang</li>
+      <li>Cukup dengan memanggil nama variblenya saja</li>
+    </ul>
+
+    <!-- Kata kunci let dan dan const -->
+     <p>Kata kunci lain untuk membuat variable. Ini lebih di rekomendasikan untuk versi terbaru javascript. (tidak disarankan untuk menggunakan var lagi.</p>
+     <ul>
+      <li>let : digunakan untuk variable yang valuenya bisa kita ubah setelah di deklarasikan.</li>
+      <li>const : digunakan untuk variable yang valuenya constant (tidak bisa diubah) setelah di deklarasikan.</li>
+     </ul>
+   <script>
+      let fullName = "Kiki Afrianto"
+      let firstName = "Hana"
+      let lastName = "Afrianto"
+      document.writeln(fullName)
+      document.writeln("<br>")
+      document.writeln(firstName)
+      document.writeln(lastName)
+
+      // contoh implementasi variable dengan const
+
+      const version = "Belajar Bahasa Inggris Versi 1"
+
+      version = "Belajar Bahasa Inggris Bersi 2" // hasilnya akan error
+      console.info(version) // muncul eror assignment to constant variable
+   
+   </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipe Data String</title>
+</head>
+<body>
+
+   <!-- tipe data string -->
+    <ul>
+      <li>Tipe data string a/ type data yang berisi text atau karakter kosong didalam tanda petik 2 (") atau 1 (')</li>
+      <li>di JS penulisan ini menggunakan " (petik dua) atau ' (petik satu) sebelum dan sesudah isi text</li>
+      <li>Jika penggunaan awal dan akhir berbeda, misal awal " dan akhir ' , ini akan menghasilkan eror. Akan membuat kode keseluruhan terdampak tidak bisa berjalan</li>
+    </ul>
+
+    <!-- Menggabungkan string -->
+     <ul>
+      <li>String bisa digabungkan dengan menggunakan tanda + (plus) u/ menghubungkan 2 buat string (text)</li>
+      <li>Jadi jika digunakan pada string tanda operator aritmatika bukan digunakah untuk menghitung penjumlahan</li>
+      <li>Jika digunakan untuk string namanya concatenated operator</li>
+     </ul>
+
+     <!-- Escape Sequence -->
+      <p>Escape sequence karakter khusus seperti Enter, Tab, atau tanda quotes yang ingin ditampilkan.</p>
+      <ul>
+         <li>Jika ingin enter pada kalimat misalnya, maka : \n</li>
+         <li>Jika ingin tab pada kalimat misalnya, maka : \t</li>
+         <li>Jika ingin tanda ' pada kalimat misalnya, maka : \'</li>
+         <li>Jika ingin tanda " pada kalimat misalnya, maka : \"</li>
+         <li>Jika ingin tanda / pada kalimat misalnya, maka : \/</li>
+      </ul>
+
+   <script>
+      // Penulisan tipe data string double quotes
+      document.writeln("Ini Text Dengan <b>Double Quotes</b>") // bisa tampil
+      document.writeln("<br>")
+      document.writeln('Ini Text Dengan <b>Single Quotes</b>') // bisa tampil
+      document.writeln("<br>")
+      // document.writeln("Tester Eror')
+      
+      // contoh menggabungkan string
+      document.writeln("Nama : " + "Kiki Afrianto" )
+      document.writeln("<br>")
+      document.writeln("Jabatan : " + "Presiden")
+      document.writeln("<br>")
+      document.writeln("<br>")
+      
+      // contoh escape sequence
+      document.writeln("<textarea cols='100' rows='30'>")
+      document.write("Dibawah ini adalah namaku : \nKiki Afrianto\n")
+      document.write("\\ Home \\ Kimabe \\ Project\n")
+      document.write("\"Kiki Afrianto Brata\"\n")
+      document.write("\'Learn With Kimabe\'")
+      document.writeln("</textarea>")
+   </script>
+</body>
+</html>

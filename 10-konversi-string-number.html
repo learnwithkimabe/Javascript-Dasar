@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Konversi String dan Number</title>
+</head>
+<body>
+   <!-- Konversi String dan Number -->
+    <ul>
+      <li>Saat bikin aplikasi, kadang kita input dari pengguna selalu alam bentuk string</li>
+      <li>Sedangkan misal kita ingin mengelola datanya dalam bentuk number</li>
+      <li>Jadi perlu untuk dilakukan konversi data</li>
+    </ul>
+
+    <!-- Beberapa cara konversi dari string dan number -->
+    <ul>
+      <li>parseInt(string) : Mengkonversi dari string ke number (bilangan bulat)</li>
+      <li>parseFloat(string) : Mengkonversi dari string ke number (bilangan pecahan)</li>
+      <li>number(string) : Mengkonversi dari string ke number (bilangan bulat / pecahan)</li>
+      <li>number.toString() : Mengkonversi dari number ke string</li>
+    </ul>
+
+    <!-- NAN (Not A Number)-->
+    <ul>
+      <li>Dalam mengkonversi ketika data tidak sesuai seperti misal text berupa kata ke number maka hasilnya akan NaN </li>
+      <li>untuk metode parseInt dan parseFloat ketika data yang akan di konversi masih memiliki angka, maka angka tersebut akan ditampilkan dengan syarat angka berada di depan huruf</li>
+      <li>untuk Number meskipun data text memiliki angka didalamnya, hasilnya akan tetap NaN apalagi string tanpa angka sama sekali</li>
+    </ul>
+
+    <!-- isNaN() funtion() -->
+    <ul>
+      <li>isNaN adalah funtion untuk mengecek apakah data sebuah number itu NaN atau bukan</li>
+      <li>isNaN menghasilkan nilai boolean, true atau false</li>
+    </ul>
+    <script>
+
+      // misal kita ingin menjumlahkan nilai berikut yang beda type datanya
+      const value = "1.02" // type data string
+      const value2 = 1 // type data number
+
+      // jika dijumlahkan
+      let result = value + value2
+      console.info(`Sebelum di convert variable value : ${result}`) // hasilnya jadi string "11"
+
+      // sedangkan kita ingin hasilnya jadi 2 maka bisa dilakukan hal berikut
+      result = parseInt(value) + value2
+      console.info(`Setelah di convert variable value : ${result}`)
+
+      let resultNumber = parseInt(value)
+      console.info(resultNumber)
+
+      resultNumber = Number(value)
+      console.info(resultNumber)
+
+      resultNumber = parseFloat(value)
+      console.info(resultNumber)
+      
+      // Nan (Not a Number)
+
+      let hexa = "x1FF"
+      let hexa2 = "1xFF"
+
+      console.info(parseInt(hexa), parseFloat(hexa)) // Hasilnya Nan
+      console.info(parseInt(hexa2), parseFloat(hexa2)) // Hasilnya angka 1 yang diambil (masih di toleransi selama angka berada di depan)
+      console.info(Number(hexa2)) // tetap hasilnya NaN meskipun posisi angka di depan huruf
+
+      // Contoh isNaN
+      let codebarang = "2.5AB7X8b"
+      
+      // ketika kita coba konversi dengan parseFloat
+      hasilcodebarang = parseFloat(codebarang)
+      console.info(hasilcodebarang)
+      // cek isNan
+      console.info(isNaN(hasilcodebarang)) // hasil false karna parsefloat masih menangkap number dalam sebuah strings
+      // misal kita konversi dengan number yg tidak memiliki toleransi
+      hasilcodebarang = Number(codebarang) // hasilnya akan NaN 
+      console.info(isNaN(hasilcodebarang)) // true
+
+
+    </script>
+</body>
+</html>
