@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipe Data Array</title>
+</head>
+<body>
+   <!-- Array -->
+    <ul>
+      <li>Array adalah type data yang berisikan kumpulan data. Bebas bisa angka, text, boolean, object, function dll</li>
+      <li>Array sifatnya dinamis, artinya data bisa bertambah dengan sendirinya saat kita memasukkan data ke dalam array</li>
+      <li>Array memiliki nomor index, dengan diawali index 0</li>
+      <li>jika ingin membuat array gunakan [ ] pada variablenya</li>
+      <li>jka ingin memasukkan data lebih dari 1, pisahkan dengan koma (,)</li>
+    </ul>
+
+    <!-- cara kerja array -->
+     <ul>
+      <li>Seperti yg sudah disampaikan sebelumnya bahwa array dimulai dari index 0</li>
+      <li>dan jika menambahkan data ke dalam array, otomatis data akan disimpanat urutan terakhir</li>
+      <li>urutan data pada array di sebut index</li>
+      <li>Bahkan di dalam array kita bisa menambahkan array juga.</li>
+     </ul>
+
+     <!-- Perintah menambah / mengurangi array -->
+     <ul>
+      <li>array.push(value) : untuk menambah data array</li>
+      <li>array.length : untuk melihat jumlah data array</li>
+      <li>array[no.index] : untuk melihat data array pada nomor index ke berapa</li>
+      <li>array[no.index] = value : untuk mengubah data dalam array dengan posisi nomor index tertentu</li>
+      <li>delete array[no.index] = value : untuk menghapus data dalam array dengan posisi nomor index tertentu, namun index tidak megnurangi array.length nya. Artinya length array masih seperti awal, hanya saja index yang dihapus valuenya undefined</li>
+     </ul>
+
+    <script>
+
+      // type data array
+      const arrayKosong = []; //array kosong
+      const arrayNama = ["Kiki", "afrianto", "brata"]
+
+      // cara menambahkan data
+      const names = []
+      // menggunakan push
+      names.push("Kiki")
+      names.push("andini", "arini") //menambahkan arraynya terus ke belakangnya
+      names.push("agung", "topik") //menambahkan arraynya terus ke belakangnya
+      console.table(names)
+      
+      // menghitung banyaknya array
+      console.info(names.length) // array berisi 5 data
+
+      // mencari data dengan nomor index tertentu
+      console.info(names[2]) // hasilnya : "arini"
+
+      // mengubah data dalam array dengan index tertentu
+      console.info(names[2] = "arini yuliani")
+
+      console.info(delete names[3]) //menghapus data nama agung dalam array
+      // data 3 terlongkap jadi panjang index tetap 5 namun nomor indexnya 0,1,2,4 kemana index 3 ?
+      // secara default dia (index no 3) memiliki nilai undefined
+      console.info(names[3] = "Wira Agung")
+      console.table(names)
+
+
+    </script>
+</body>
+</html>
