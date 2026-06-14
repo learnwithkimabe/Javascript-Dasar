@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tipe Data Object</title>
+</head>
+<body>
+   <!-- tipe data object -->
+    <ul>
+      <li>tipe data object a/ tipe data yang mirip dengan tipe data array</li>
+      <li>yang membedakan a/ index pada tipe data object bisa menggunakan string</li>
+      <li>index di object biasanya disebut attributes atau properties, bukan index</li>
+      <li>membuat object dengan variable dituliskan dengan { }</li>
+    </ul>
+
+   <script>
+      
+      // object kosong
+      const character ={
+         nama: 'Kiki Afrianto',
+         usia: 31,
+         skill: ["income audit", "coding", "public speaking"],
+         jabatan: "Founder"
+      }
+
+      // menambahkan properties ke dalam object
+      character.nama = "Kiki Afrianto"
+      character.usia = 31
+      character.skill = ["income audit","programming","public speaking"]
+      character.jabatan = "CEO"
+
+      // menghapus properties di dalam object
+      delete character.jabatan
+
+      console.table(character)
+
+   </script>
+</body>
+</html>
