@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Popup</title>
+</head>
+<body>
+   <!-- Popup -->
+    <p>JS memiliki popup yaitu alert, confirm, dan prompt</p>
+    <p>Alert digunakan untuk memberikan peringatan berupa popup text di browser</p>
+    <p>prompt digunakan untuk meminta input string dari pengguna browser dalam bentuk popup input text</p>
+    <p>confirm digunakan untuk meminta inpput boolean dari pengguna browser</p>
+    <button id="prompt">Input Nama</button>
+    <h2 class="output"></h2>
+
+    <script>
+      // popup alert
+      // alert("Halo ini popup alert")
+
+      // popup prompt
+      // const nama = prompt("Masukkan Nama Kamu")
+      // const sayHello = `Halo nama saya ${nama}`
+
+      // alert(sayHello)
+
+      // popup confirm
+      // const confirmLogin = confirm("Anda yakin akan masuk ?")
+
+      // if (confirmLogin) {
+      //    alert("Selamat anda telah masuk")
+      // } else {
+      //    alert("Anda Batal Login")
+      //    document.body("Zero")
+      // }
+
+      const promptBtn = document.querySelector('#prompt')
+      console.info(promptBtn)
+      const output = document.querySelector(".output")
+      promptBtn.addEventListener('click',()=> {
+         const userName = prompt("Masukkan Username Kamu!", "Guest")
+         if (userName) {
+            output.innerHTML = `Halo ${userName}, selamat datang di aplikasi pinjam duit!`
+         } else {
+            output.innerHTML = "Ga Ada Nama"
+         }
+      })
+   
+    </script>
+</body>
+</html>
