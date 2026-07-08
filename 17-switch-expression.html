@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Switch Expression</title>
+</head>
+<body>
+   <script>
+
+      // Switch Expression
+      // switch sama dengan if yaitu percabangan juga, tapi switch digunakan untuk perbandingan == (sama dengan) saja.
+      // sedangkan if digunakan untuk perbandingan lain yang lebih komplek, seperti !==, === dan lain sebagainya.
+      // fungsi case sama seperti else if
+      // akan di eksekusi sampai menemukan break. dan kalo sudah nemu break maka proses membaca kode berhenti (yg baris kode bawahnya ga di eksekusi).
+      // default sama dengan else di percabangan dengan if
+
+      // contoh
+      let nilai = prompt("Masukkan Nilai A / B / C / D");
+
+      switch (nilai) {
+         case "A":
+            document.writeln("Kamu Lulus Cumlaude")
+            break;
+         case "B":
+            document.writeln("Kamu Lulus Biasa")
+            break
+         case "C":
+         case "D":
+            document.writeln("Kamu harus remedial")
+            break
+         default:
+            document.writeln("Mungkin You Salah Jurusan")
+      }
+
+   </script>
+</body>
+</html>
